@@ -1,0 +1,63 @@
+  body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  div#nav{
+    position: absolute;;
+    top: 0;
+    left: -200px;
+    padding: 0;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    width: 200px;
+    height: 100%;
+    display: block;
+    transition: left 0.3s linear;
+  }
+  div#nav.visible{
+    left: 0px;
+    transition: left 0.3s linear;
+  }
+  div#nav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  div#nav ul li{
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #111;
+    width: 180px;
+    display: block;
+    cursor: pointer;
+  }
+
+  div#nav-btn{
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    top: 0px;
+    right: -60px;
+  }
+
+  div#nav-btn span{
+    height: 1px;
+    background: #111;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  div#nav-btn span:nth-child(2){
+    width: 75%;
+  }
+
+  div#nav-btn span:nth-child(3){
+    width: 50%;
+  }
+
